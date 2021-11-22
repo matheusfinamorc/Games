@@ -13,75 +13,85 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:clickable="true"
         android:layout_margin="1dp"
-        android:background="@color/white"
+        android:clickable="true"
         android:focusable="true">
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:background="@drawable/card_edge"
             android:layout_height="200dp"
             android:layout_margin="8dp"
             app:cardCornerRadius="8dp"
+            app:cardElevation="5dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0">
 
-            <ImageView
-                android:id="@+id/img_list"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="110dp"
-                android:scaleType="centerCrop"
-                tools:src="@mipmap/ex_foreground" />
+                android:layout_height="match_parent"
+                android:background="@drawable/card_edge"
+                android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="60px"
-                android:layout_height="60px"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="115dp"
-                android:src="@drawable/vttitle" />
+                <ImageView
+                    android:id="@+id/img_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:scaleType="centerCrop"
+                    android:layout_margin="8dp"
+                    tools:src="@mipmap/ex_foreground" />
 
-            <TextView
-                android:id="@+id/name_list_tv"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="118dp"
-                android:ellipsize="end"
-                android:fontFamily="@font/garamond"
-                android:maxLines="1"
-                android:text="@{games.title}"
-                android:textColor="#708090"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                tools:text="Nome do jogo" />
+                <ImageView
+                    android:layout_width="60px"
+                    android:layout_height="60px"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="120dp"
+                    android:src="@drawable/vttitle" />
 
-            <ImageView
-                android:layout_width="50px"
-                android:layout_height="50px"
-                android:layout_marginStart="8dp"
-                android:layout_gravity="bottom"
-                android:layout_marginBottom="8dp"
-                android:src="@drawable/vtplatform" />
+                <TextView
+                    android:id="@+id/name_list_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="122dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/garamond"
+                    android:maxLines="1"
+                    android:text="@{games.title}"
+                    android:textColor="#708090"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:text="Nome do jogo" />
 
-            <TextView
-                android:id="@+id/platform_list_tv"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:layout_marginBottom="8dp"
-                android:layout_marginStart="30dp"
-                android:ellipsize="end"
-                android:fontFamily="@font/garamond"
-                android:maxLines="1"
-                android:text="@{games.platform}"
-                android:textColor="#708090"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                tools:text="Plataforma" />
+                <ImageView
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="160dp"
+                    android:src="@drawable/vtplatform" />
+
+                <TextView
+                    android:id="@+id/platform_list_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity=""
+                    android:layout_marginStart="30dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="160dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/garamond"
+                    android:maxLines="1"
+                    android:text="@{games.platform}"
+                    android:textColor="#708090"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:text="Plataforma" />
+
+            </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
 

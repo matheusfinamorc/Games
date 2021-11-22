@@ -69,6 +69,17 @@
                 android:orientation="vertical"
                 app:layout_behavior="@string/appbar_scrolling_view_behavior"
                 tools:context=".ui.main.MainActivity">
+                <SearchView
+                    android:id="@+id/searchview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:queryHint="Digite o nome do jogo"
+                    android:iconifiedByDefault="false"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/searchview_background"
+                    android:queryBackground="@android:color/transparent"/>
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rv_list_games"

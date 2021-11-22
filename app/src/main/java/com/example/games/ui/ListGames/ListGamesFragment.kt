@@ -8,12 +8,8 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.bumptech.glide.Glide
-import com.bumptech.glide.load.resource.bitmap.CenterCrop
 import com.example.games.R
 import com.example.games.adapter.ListGames.ListGamesAdapter
-import com.example.games.model.GamesItem
-import kotlinx.android.synthetic.main.item_list_games.*
 import kotlinx.android.synthetic.main.list_games.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
@@ -27,10 +23,8 @@ class ListGamesFragment() : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         getGames()
     }
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
