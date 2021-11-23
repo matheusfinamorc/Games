@@ -39,7 +39,7 @@
                     android:id="@+id/img_list"
                     android:layout_width="match_parent"
                     android:layout_height="110dp"
-                    android:scaleType="centerCrop"
+                    android:scaleType="fitXY"
                     android:layout_margin="8dp"
                     tools:src="@mipmap/ex_foreground" />
 

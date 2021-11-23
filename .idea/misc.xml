@@ -4,16 +4,20 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/Games/app/src/main/res/drawable/card_edge.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/Games/app/src/main/res/drawable/ic_baseline_games_24.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/Games/app/src/main/res/drawable/ic_search.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/Games/app/src/main/res/drawable/ic_vtplatform.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/Games/app/src/main/res/drawable/ic_vttitle.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/Games/app/src/main/res/drawable/joystick_background.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/Games/app/src/main/res/drawable/searchview_background.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/Games/app/src/main/res/font-v26/font_resource.xml" value="0.20989583333333334" />
         <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/Games/app/src/main/res/font/font_resource.xml" value="0.20989583333333334" />
-        <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/Games/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/Games/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/Games/app/src/main/res/layout/card_edge.xml" value="0.1796875" />
         <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/Games/app/src/main/res/layout/item_list_games.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/Games/app/src/main/res/layout/list_games.xml" value="0.1" />
         <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/Games/app/src/main/res/layout/start_app.xml" value="0.1796875" />
+        <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/Games/app/src/main/res/menu/main_bottom_nav_menu.xml" value="0.1" />
         <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/Games/app/src/main/res/mipmap-anydpi-v26/ex.xml" value="0.19583333333333333" />
       </map>
     </option>

@@ -43,6 +43,7 @@ class ListGamesAdapter(
             binding.executePendingBindings()
             Glide.with(itemView)
                 .load(gameItem.thumbnail)
+                .override(600,200)
                 .into(image)
         }
     }
