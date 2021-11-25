@@ -9,5 +9,14 @@
         android:id="@+id/listGames"
         tools:layout="@layout/list_games"
         android:name="com.example.games.ui.ListGames.ListGamesFragment"
-        android:label="List Games" />
+        android:label="List Games" >
+        <action
+            android:id="@+id/action_listGames_to_platformGamesFragment"
+            app:destination="@id/choicePlatformGames" />
+    </fragment>
+    <fragment
+        android:id="@+id/choicePlatformGames"
+        android:name="com.example.games.ui.ChoicePlatformGames.PlatformGamesFragment"
+        android:label="Choice Platform Games"
+        tools:layout="@layout/list_choice_platform_games"/>
 </navigation>

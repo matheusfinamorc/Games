@@ -12,4 +12,8 @@ class MainRepository(
         return api.getGames()
     }
 
+    suspend fun getPlatform(platform: String): Response<MutableList<GamesItem>>{
+        return api.getPlatform(platform)
+    }
+
 }
