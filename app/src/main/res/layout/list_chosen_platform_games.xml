@@ -14,7 +14,7 @@
             android:layout_height="match_parent">
 
             <com.google.android.material.appbar.AppBarLayout
-                android:id="@+id/appbar_list_games"
+                android:id="@+id/appbar_list_chosen_games"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -26,7 +26,7 @@
                     app:toolbarId="@+id/toolbar">
 
                     <androidx.appcompat.widget.Toolbar
-                        android:id="@+id/toolbar_list_games"
+                        android:id="@+id/toolbar_list_chosen_games"
                         android:layout_width="match_parent"
                         android:layout_height="?attr/actionBarSize"
                         android:background="@color/azul_appbar">
@@ -36,7 +36,7 @@
                             android:layout_height="wrap_content">
 
                             <ImageView
-                                android:id="@+id/logo_appbar_list_games"
+                                android:id="@+id/logo_appbar_list_chosen_games"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_centerVertical="true"
@@ -50,7 +50,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:layout_marginTop="17dp"
-                                android:layout_toEndOf="@id/logo_appbar_list_games"
+                                android:layout_toEndOf="@id/logo_appbar_list_chosen_games"
                                 android:text="WikiGames"
                                 android:textColor="@color/white"
                                 android:textSize="16sp" />
@@ -71,7 +71,7 @@
                 tools:context=".ui.main.MainActivity">
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rv_list_games"
+                    android:id="@+id/rv_list_chosen_games"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
@@ -84,7 +84,6 @@
             </LinearLayout>
 
         </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
 
     </RelativeLayout>
 

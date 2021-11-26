@@ -8,7 +8,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.games.R
-import kotlinx.android.synthetic.main.list_choice_platform_games.*
+import kotlinx.android.synthetic.main.choice_platform_games.*
 
 class PlatformGamesFragment : Fragment() {
 
@@ -22,7 +22,7 @@ class PlatformGamesFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(
-            R.layout.list_choice_platform_games,
+            R.layout.choice_platform_games,
             container,
             false
         )
@@ -35,10 +35,16 @@ class PlatformGamesFragment : Fragment() {
 
     private fun configCLick() {
         button_platform_pc.setOnClickListener {
-            Toast.makeText(context,"1",Toast.LENGTH_LONG).show()
+            val direction = PlatformGamesFragmentDirections
+                .actionChoicePlatformGamesToListChosenGamesFragment(1)
+            controller.navigate(direction)
+
         }
         button_platform_browser.setOnClickListener {
-            Toast.makeText(context,"2",Toast.LENGTH_LONG).show()
+            val direction = PlatformGamesFragmentDirections
+                .actionChoicePlatformGamesToListChosenGamesFragment(2)
+            controller.navigate(direction)
+
         }
     }
 }

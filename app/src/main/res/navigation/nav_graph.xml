@@ -18,5 +18,18 @@
         android:id="@+id/choicePlatformGames"
         android:name="com.example.games.ui.ChoicePlatformGames.PlatformGamesFragment"
         android:label="Choice Platform Games"
-        tools:layout="@layout/list_choice_platform_games"/>
+        tools:layout="@layout/choice_platform_games">
+        <action
+            android:id="@+id/action_choicePlatformGames_to_listChosenGamesFragment"
+            app:destination="@id/listChosenGamesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listChosenGamesFragment"
+        android:name="com.example.games.ui.ListChosenGames.ListChosenGamesFragment"
+        android:label="List Chosen Games "
+        tools:layout="@layout/list_chosen_platform_games">
+        <argument
+            android:name="idButtonClick"
+            app:argType="integer" />
+    </fragment>
 </navigation>
