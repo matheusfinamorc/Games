@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.core.view.isInvisible
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.games.R
@@ -25,6 +27,7 @@ class ListGamesFragment() : Fragment() {
         super.onCreate(savedInstanceState)
         getGames()
     }
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -41,6 +44,15 @@ class ListGamesFragment() : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         configRV()
         configList()
+
+        listGamesViewModel.progressBar.observe(viewLifecycleOwner) { showProgressBar ->
+            if (showProgressBar) {
+                progressBar_list_games.visibility = View.VISIBLE
+            } else {
+                progressBar_list_games.visibility = View.GONE
+            }
+
+        }
     }
 
     private fun configList() {
@@ -58,6 +70,7 @@ class ListGamesFragment() : Fragment() {
             if (response.isSuccessful) {
                 response.body()?.let { games ->
                     adapter?.add(games)
+                    // hideProgressBar()
                 }
             } else {
                 Log.i("Response", response.errorBody().toString())
@@ -65,4 +78,7 @@ class ListGamesFragment() : Fragment() {
             }
         })
     }
+//    private fun hideProgressBar(){
+//        progressBar_list_games.visibility = View.GONE
+//    }
 }

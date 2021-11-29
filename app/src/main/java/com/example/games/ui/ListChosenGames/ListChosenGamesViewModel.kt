@@ -8,6 +8,7 @@ import com.example.games.model.GamesItem
 import com.example.games.repository.MainRepository
 import kotlinx.coroutines.launch
 import retrofit2.Response
+import java.lang.Exception
 
 class ListChosenGamesViewModel(
     private val repository: MainRepository): ViewModel() {
@@ -15,10 +16,22 @@ class ListChosenGamesViewModel(
     val _gameItem = MutableLiveData<GamesItem>()
     val gameItem: LiveData<GamesItem> = _gameItem
 
+    private val _progressBar = MutableLiveData<Boolean>()
+    val progressBar: LiveData<Boolean>
+        get() = _progressBar
+
     fun getSelectedGame(platform : String){
         viewModelScope.launch {
-            val response = repository.getPlatform(platform)
+            try {
+                _progressBar.value = true
+                val response = repository.getPlatform(platform)
                 fResponse.postValue(response)
+            }catch (ex: Exception){
+                //tratamento do possivel erro
+            }finally {
+                _progressBar.value = false
+            }
+
         }
     }
 }

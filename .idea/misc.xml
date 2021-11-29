@@ -16,6 +16,7 @@
         <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/Games/app/src/main/res/drawable/ic_vttitle.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/Games/app/src/main/res/drawable/joystick_background.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/Games/app/src/main/res/drawable/pc_png_background.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/Games/app/src/main/res/drawable/progess_drawable_blue.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/Games/app/src/main/res/drawable/searchview_background.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/Games/app/src/main/res/drawable/web_png_background.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/Games/app/src/main/res/font-v26/font_resource.xml" value="0.20989583333333334" />
@@ -26,8 +27,8 @@
         <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/Games/app/src/main/res/layout/item_choice_platform_games.xml" value="0.22" />
         <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/Games/app/src/main/res/layout/item_list_games.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/Games/app/src/main/res/layout/list_choice_platform_games.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/Games/app/src/main/res/layout/list_chosen_platform_games.xml" value="0.1272644927536232" />
-        <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/Games/app/src/main/res/layout/list_games.xml" value="0.1" />
+        <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/Games/app/src/main/res/layout/list_chosen_platform_games.xml" value="0.1" />
+        <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/Games/app/src/main/res/layout/list_games.xml" value="0.4466666666666667" />
         <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/Games/app/src/main/res/layout/platform_games.xml" value="0.22" />
         <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/Games/app/src/main/res/layout/start_app.xml" value="0.1796875" />
         <entry key="..\:/Users/matheus.finamor/AndroidStudioProjects/Games/app/src/main/res/menu/main_bottom_nav_menu.xml" value="0.1" />

@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.games.R
 import com.example.games.adapter.ListGames.ListChosenGamesAdapter
 import kotlinx.android.synthetic.main.list_chosen_platform_games.*
+import kotlinx.android.synthetic.main.list_games.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 private const val TAG_PC = "pc"
@@ -75,6 +76,14 @@ class ListChosenGamesFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         configRV()
         configList()
+
+        listChosenGamesViewModel.progressBar.observe(viewLifecycleOwner){showProgressBar ->
+            if(showProgressBar){
+                progressBar_list_chosen_platform_games.visibility = View.VISIBLE
+            }else{
+                progressBar_list_chosen_platform_games.visibility = View.GONE
+            }
+        }
     }
 
     private fun configList() {

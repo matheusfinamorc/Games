@@ -63,25 +63,41 @@
 
             </com.google.android.material.appbar.AppBarLayout>
 
-            <LinearLayout
+            <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                app:layout_behavior="@string/appbar_scrolling_view_behavior"
-                tools:context=".ui.main.MainActivity">
+                android:layout_marginTop="60dp">
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rv_list_chosen_games"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:listitem="@layout/item_list_games" />
+                    android:orientation="vertical"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    tools:context=".ui.main.MainActivity">
 
-            </LinearLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_list_chosen_games"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:listitem="@layout/item_list_games" />
+
+                </LinearLayout>
+
+                <ProgressBar
+                    android:theme="@style/ProgressBarStyle"
+                    android:id="@+id/progressBar_list_chosen_platform_games"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleX="0.10"
+                    android:scaleY="0.10"
+                    android:visibility="visible" />
+
+            </FrameLayout>
 
         </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
