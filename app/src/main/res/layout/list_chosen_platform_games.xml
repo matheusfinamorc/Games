@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -89,12 +91,12 @@
                 </LinearLayout>
 
                 <ProgressBar
-                    android:theme="@style/ProgressBarStyle"
                     android:id="@+id/progressBar_list_chosen_platform_games"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleX="0.10"
                     android:scaleY="0.10"
+                    android:theme="@style/ProgressBarStyle"
                     android:visibility="visible" />
 
             </FrameLayout>

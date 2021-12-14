@@ -12,7 +12,7 @@
         android:label="List Games" >
         <action
             android:id="@+id/action_listGames_to_platformGamesFragment"
-            app:destination="@id/choicePlatformGames" />
+            app:destination="@id/choicePlatformGames"/>
     </fragment>
     <fragment
         android:id="@+id/choicePlatformGames"
@@ -21,7 +21,7 @@
         tools:layout="@layout/choice_platform_games">
         <action
             android:id="@+id/action_choicePlatformGames_to_listChosenGamesFragment"
-            app:destination="@id/listChosenGamesFragment" />
+            app:destination="@id/listChosenGamesFragment"/>
     </fragment>
     <fragment
         android:id="@+id/listChosenGamesFragment"

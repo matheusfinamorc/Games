@@ -6,10 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.core.view.isInvisible
-import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.transition.TransitionInflater
 import com.example.games.R
 import com.example.games.adapter.ListGames.ListGamesAdapter
 import kotlinx.android.synthetic.main.list_games.*
@@ -23,9 +22,14 @@ class ListGamesFragment() : Fragment() {
         }
     }
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val inflater = TransitionInflater.from(requireContext())
+        enterTransition = inflater.inflateTransition(R.transition.slide_right)
+        exitTransition = inflater.inflateTransition(R.transition.fade)
         getGames()
+
     }
 
     override fun onCreateView(

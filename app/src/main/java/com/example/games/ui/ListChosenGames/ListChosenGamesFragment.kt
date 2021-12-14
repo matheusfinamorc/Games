@@ -9,10 +9,10 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.transition.TransitionInflater
 import com.example.games.R
 import com.example.games.adapter.ListGames.ListChosenGamesAdapter
 import kotlinx.android.synthetic.main.list_chosen_platform_games.*
-import kotlinx.android.synthetic.main.list_games.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 private const val TAG_PC = "pc"
@@ -28,6 +28,9 @@ class ListChosenGamesFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val inflater = TransitionInflater.from(requireContext())
+        exitTransition = inflater.inflateTransition(R.transition.fade)
+        enterTransition = inflater.inflateTransition(R.transition.slide_right)
         getSelectedGames()
     }
 
